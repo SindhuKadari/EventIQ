@@ -1,0 +1,704 @@
+{
+  "total_unplanned_events": 7692,
+  "priority_distribution": {
+    "High": 4744,
+    "Low": 2946
+  },
+  "top_rules": [
+    {
+      "condition": "corridor = 'Non-corridor'",
+      "conclusion": "priority = Low",
+      "accuracy": 1.0,
+      "support": 2929,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on Non-corridor are Low priority"
+    },
+    {
+      "condition": "corridor = 'Mysore Road'",
+      "conclusion": "priority = High",
+      "accuracy": 0.9971910112359551,
+      "support": 712,
+      "confidence_pct": 99.71910112359551,
+      "reasoning": "Strong historical pattern: 99.7% of events on Mysore Road are High priority"
+    },
+    {
+      "condition": "corridor = 'Bellary Road 1'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 597,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on Bellary Road 1 are High priority"
+    },
+    {
+      "condition": "veh_type = 'lcv'",
+      "conclusion": "priority \u2248 High",
+      "accuracy": 0.7031019202363368,
+      "support": 677,
+      "confidence_pct": 70.31019202363368,
+      "reasoning": "Pattern observed: 70.3% of lcv events are High priority"
+    },
+    {
+      "condition": "corridor = 'Tumkur Road'",
+      "conclusion": "priority = High",
+      "accuracy": 0.9911894273127754,
+      "support": 454,
+      "confidence_pct": 99.11894273127754,
+      "reasoning": "Strong historical pattern: 99.1% of events on Tumkur Road are High priority"
+    },
+    {
+      "condition": "corridor = 'Bellary Road 2'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 362,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on Bellary Road 2 are High priority"
+    },
+    {
+      "condition": "veh_type = 'others'",
+      "conclusion": "priority \u2248 High",
+      "accuracy": 0.7254464285714286,
+      "support": 448,
+      "confidence_pct": 72.54464285714286,
+      "reasoning": "Pattern observed: 72.5% of others events are High priority"
+    },
+    {
+      "condition": "corridor = 'Hosur Road'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 296,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on Hosur Road are High priority"
+    },
+    {
+      "condition": "veh_type = 'private_car'",
+      "conclusion": "priority \u2248 High",
+      "accuracy": 0.7748538011695907,
+      "support": 342,
+      "confidence_pct": 77.48538011695906,
+      "reasoning": "Pattern observed: 77.5% of private_car events are High priority"
+    },
+    {
+      "condition": "corridor = 'ORR North 1'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 257,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on ORR North 1 are High priority"
+    },
+    {
+      "condition": "corridor = 'Old Madras Road'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 252,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on Old Madras Road are High priority"
+    },
+    {
+      "condition": "corridor = 'Magadi Road'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 237,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on Magadi Road are High priority"
+    },
+    {
+      "condition": "corridor = 'ORR East 1'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 236,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on ORR East 1 are High priority"
+    },
+    {
+      "condition": "corridor = 'ORR North 2'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 223,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on ORR North 2 are High priority"
+    },
+    {
+      "condition": "corridor = 'Bannerghata Road'",
+      "conclusion": "priority = High",
+      "accuracy": 1.0,
+      "support": 204,
+      "confidence_pct": 100.0,
+      "reasoning": "Strong historical pattern: 100.0% of events on Bannerghata Road are High priority"
+    }
+  ],
+  "corridor_profiles": {
+    "Tumkur Road": {
+      "category": "Tumkur Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.9,
+      "total_events": 454,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + heavy_vehicle (100%)",
+      "anomalies": [
+        "Mostly Low priority (1%) - non-critical corridor"
+      ]
+    },
+    "ORR East 1": {
+      "category": "ORR East 1",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 236,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Non-corridor": {
+      "category": "Non-corridor",
+      "high_priority_pct": 0.0,
+      "low_priority_pct": 99.9,
+      "total_events": 2929,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + auto (0%)",
+      "anomalies": [
+        "Mostly Low priority (100%) - non-critical corridor"
+      ]
+    },
+    "ORR East 2": {
+      "category": "ORR East 2",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 93,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "ORR West 1": {
+      "category": "ORR West 1",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 161,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "ORR North 1": {
+      "category": "ORR North 1",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 257,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Old Madras Road": {
+      "category": "Old Madras Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 252,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Bellary Road 2": {
+      "category": "Bellary Road 2",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 362,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Bellary Road 1": {
+      "category": "Bellary Road 1",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 597,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + auto (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Hosur Road": {
+      "category": "Hosur Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 296,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Bannerghata Road": {
+      "category": "Bannerghata Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 204,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "ORR North 2": {
+      "category": "ORR North 2",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 223,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Magadi Road": {
+      "category": "Magadi Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 237,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "IRR(Thanisandra road)": {
+      "category": "IRR(Thanisandra road)",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 91,
+      "avg_incident_duration": null,
+      "most_common_cause": "pot_holes",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Mysore Road": {
+      "category": "Mysore Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.3,
+      "total_events": 712,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + auto (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "West of Chord Road": {
+      "category": "West of Chord Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 169,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "CBD 1": {
+      "category": "CBD 1",
+      "high_priority_pct": 100.0,
+      "low_priority_pct": 0.0,
+      "total_events": 25,
+      "avg_incident_duration": null,
+      "most_common_cause": "pot_holes",
+      "highest_risk_combination": null,
+      "anomalies": [
+        "Almost all High priority (100%) - critical corridor"
+      ]
+    },
+    "CBD 2": {
+      "category": "CBD 2",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 98,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Old Airport Road": {
+      "category": "Old Airport Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 67,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Hennur Main Road": {
+      "category": "Hennur Main Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 90,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Airport New South Road": {
+      "category": "Airport New South Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 50,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    },
+    "Varthur Road": {
+      "category": "Varthur Road",
+      "high_priority_pct": 1.0,
+      "low_priority_pct": 0.0,
+      "total_events": 69,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": "vehicle_breakdown + bmtc_bus (100%)",
+      "anomalies": [
+        "Mostly Low priority (0%) - non-critical corridor"
+      ]
+    }
+  },
+  "cause_profiles": {
+    "vehicle_breakdown": {
+      "category": "vehicle_breakdown",
+      "high_priority_pct": 66.1,
+      "low_priority_pct": 33.8,
+      "total_events": 4884,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": "taxi (82%)",
+      "anomalies": []
+    },
+    "others": {
+      "category": "others",
+      "high_priority_pct": 59.5,
+      "low_priority_pct": 40.5,
+      "total_events": 637,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "tree_fall": {
+      "category": "tree_fall",
+      "high_priority_pct": 32.7,
+      "low_priority_pct": 67.3,
+      "total_events": 281,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "accident": {
+      "category": "accident",
+      "high_priority_pct": 46.0,
+      "low_priority_pct": 54.0,
+      "total_events": 365,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "water_logging": {
+      "category": "water_logging",
+      "high_priority_pct": 59.3,
+      "low_priority_pct": 40.7,
+      "total_events": 455,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "pot_holes": {
+      "category": "pot_holes",
+      "high_priority_pct": 55.7,
+      "low_priority_pct": 44.3,
+      "total_events": 537,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "congestion": {
+      "category": "congestion",
+      "high_priority_pct": 68.9,
+      "low_priority_pct": 31.1,
+      "total_events": 135,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "road_conditions": {
+      "category": "road_conditions",
+      "high_priority_pct": 54.7,
+      "low_priority_pct": 45.3,
+      "total_events": 170,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "construction": {
+      "category": "construction",
+      "high_priority_pct": 56.2,
+      "low_priority_pct": 43.8,
+      "total_events": 169,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "procession": {
+      "category": "procession",
+      "high_priority_pct": 32.4,
+      "low_priority_pct": 67.6,
+      "total_events": 34,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "protest": {
+      "category": "protest",
+      "high_priority_pct": 42.9,
+      "low_priority_pct": 57.1,
+      "total_events": 7,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": [
+        "Rare cause (n=7 events)"
+      ]
+    },
+    "Debris": {
+      "category": "Debris",
+      "high_priority_pct": 66.7,
+      "low_priority_pct": 33.3,
+      "total_events": 12,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": [
+        "Rare cause (n=12 events)"
+      ]
+    },
+    "Fog / Low Visibility": {
+      "category": "Fog / Low Visibility",
+      "high_priority_pct": 50.0,
+      "low_priority_pct": 50.0,
+      "total_events": 2,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": [
+        "Rare cause (n=2 events)"
+      ]
+    },
+    "test_demo": {
+      "category": "test_demo",
+      "high_priority_pct": 33.3,
+      "low_priority_pct": 66.7,
+      "total_events": 3,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": [
+        "Rare cause (n=3 events)"
+      ]
+    },
+    "debris": {
+      "category": "debris",
+      "high_priority_pct": 100.0,
+      "low_priority_pct": 0.0,
+      "total_events": 1,
+      "avg_incident_duration": null,
+      "most_common_cause": null,
+      "highest_risk_combination": null,
+      "anomalies": [
+        "High-risk cause (100% High priority)",
+        "Rare cause (n=1 events)"
+      ]
+    }
+  },
+  "vehicle_profiles": {
+    "lcv": {
+      "category": "lcv",
+      "high_priority_pct": 70.3,
+      "low_priority_pct": 29.7,
+      "total_events": 677,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "heavy_vehicle": {
+      "category": "heavy_vehicle",
+      "high_priority_pct": 64.5,
+      "low_priority_pct": 35.3,
+      "total_events": 963,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "private_bus": {
+      "category": "private_bus",
+      "high_priority_pct": 63.8,
+      "low_priority_pct": 36.2,
+      "total_events": 359,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "bmtc_bus": {
+      "category": "bmtc_bus",
+      "high_priority_pct": 59.7,
+      "low_priority_pct": 40.3,
+      "total_events": 1464,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "private_car": {
+      "category": "private_car",
+      "high_priority_pct": 77.5,
+      "low_priority_pct": 22.5,
+      "total_events": 342,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": [
+        "High-impact vehicle type (77%)"
+      ]
+    },
+    "ksrtc_bus": {
+      "category": "ksrtc_bus",
+      "high_priority_pct": 70.5,
+      "low_priority_pct": 29.5,
+      "total_events": 217,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "truck": {
+      "category": "truck",
+      "high_priority_pct": 65.6,
+      "low_priority_pct": 34.4,
+      "total_events": 276,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "auto": {
+      "category": "auto",
+      "high_priority_pct": 67.6,
+      "low_priority_pct": 32.4,
+      "total_events": 37,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": [
+        "Low occurrence (n=37 events)"
+      ]
+    },
+    "others": {
+      "category": "others",
+      "high_priority_pct": 72.5,
+      "low_priority_pct": 27.5,
+      "total_events": 448,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": []
+    },
+    "taxi": {
+      "category": "taxi",
+      "high_priority_pct": 81.9,
+      "low_priority_pct": 18.1,
+      "total_events": 94,
+      "avg_incident_duration": null,
+      "most_common_cause": "vehicle_breakdown",
+      "highest_risk_combination": null,
+      "anomalies": [
+        "High-impact vehicle type (82%)"
+      ]
+    }
+  },
+  "blind_spots": [],
+  "insights": [
+    {
+      "insight": "Three corridors account for 34% High priority events",
+      "priority": "High",
+      "affected_scenarios": [
+        "CBD 1",
+        "Tumkur Road",
+        "ORR East 1"
+      ],
+      "recommended_action": "Pre-position resources on CBD 1, Tumkur Road, ORR East 1 during peak hours",
+      "data_support": "Historical data from 7692 events"
+    },
+    {
+      "insight": "Certain vehicle types (BMTC, Heavy) are involved in 70% High priority events",
+      "priority": "High",
+      "affected_scenarios": [
+        "lcv",
+        "private_car",
+        "ksrtc_bus",
+        "others"
+      ],
+      "recommended_action": "Prioritize dispatch for incidents involving lcv, private_car, ksrtc_bus, others",
+      "data_support": "Observed in 1684 events"
+    },
+    {
+      "insight": "Three causes (vehicle_breakdown, others, pot_holes) account for 79% of all unplanned events",
+      "priority": "High",
+      "affected_scenarios": [
+        "vehicle_breakdown",
+        "others",
+        "pot_holes"
+      ],
+      "recommended_action": "Develop rapid-response protocols specific to vehicle_breakdown, others, pot_holes",
+      "data_support": "78% of 7692 events"
+    }
+  ],
+  "generated_at": "2026-06-20T16:45:49.322390"
+}
